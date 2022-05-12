@@ -1,0 +1,95 @@
+.marketing-tools {
+    width: 100%;
+    height: 585px;
+    display: flex;
+    justify-content: center;
+}
+
+.marketing-tools-content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+.marketing-text {
+    width: 50%;
+    height: 100%;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketing-text h2 {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.marketing-text p {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.marketing-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    
+    .marketing-tools {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .marketing-tools-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .marketing-text {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .marketing-text h2 {
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+
+    .marketing-text p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+
+    .marketing-img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0;
+    }
+
+    .marketing-img img {
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}

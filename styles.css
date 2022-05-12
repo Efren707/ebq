@@ -23,6 +23,7 @@ body {
 
 .content {
     width: 100%;
+    height: 100vh;
 }
 
 #contact-info {
@@ -35,9 +36,6 @@ body {
     left: 30%;
     border: 8px solid #2979EC;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .contact-info-inner {
@@ -70,177 +68,9 @@ body {
     font-weight: bold;
 }
 
-.header {
-    width: 100%;
-    height: 585px;
-    background-color: #EBF4FF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-logo {
-    width: 95%;
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-img {
-    height: 110px;
-    width: 110px;
-    margin-left: 10px;
-}
-
-.header-btn {
-    padding: 15px 35px;
-    background-color: #2979EC;
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: 550;
-    font-size: 15px;
-    letter-spacing: 0.8px;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.header-text {
-    width: 80%;
-    margin-bottom: 100px;
-}
-
-.header-text-content {
-    width: 40%;
-    margin-left: 10px;
-}
-
-.header-text-content h1 {
-    font-size: 50px;
-    letter-spacing: 1px;
-}
-
-.header-text-content p {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 500;
-}
-
-.marketing-tools {
-    width: 100%;
-    height: 585px;   
-    display: flex;
-    justify-content: center;
-}
-
-.marketing-tools-content {
-    width: 90%;
-    height: 100%;  
-    display: flex;
-}
-
-.marketing-text {
-    width: 50%;
-    height: 100%;
-    padding: 0 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.marketing-text h2 {
-    font-size: 40px;
-    padding-bottom: 25px;
-}
-
-.marketing-text p {
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 1px;
-}
-
-.marketing-img {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media (max-width: 768px) {
     .content {
         height: 100vh;
-    }
-
-    .header {
-        height: 100vh;
-    }
-
-    .header-text {
-        width: 90%;
-        padding-bottom: 100px;
-    }
-
-    .header-text-content {
-        width: 95%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 0px;
-    }
-
-    
-    .marketing-tools {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .marketing-tools-content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .marketing-text {
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .marketing-text h2 {
-        font-size: 40px;
-        padding-bottom: 25px;
-    }
-
-    .marketing-text p {
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 1px;
-    }
-
-    .marketing-img {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 60px 0;
-    }
-
-    .marketing-img img {
-        width: 90%;
-        height: 100%;
-        object-fit: contain;
     }
 
     #contact-info {
