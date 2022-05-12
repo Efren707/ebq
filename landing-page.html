@@ -10,13 +10,28 @@
 	<body>
 		<!--Page Content-->
 		<div class="content">
+
+			<div id="contact-info">
+				<div class="contact-info-inner">
+					<div class="contact-close">
+						<span class="close">&times;</span>
+					</div>
+					
+					<div class="contact-content">
+						6800 Burleson Road
+						Building 310, Suite 265
+						Austin, TX 78744
+						(512) 637-9696 Info@ebq.com
+					</div>
+				</div>
+			</div>
 			
 			<!--Header-->
 			<div class="header">
 
 				<div class="header-logo">
 					<img class="header-img" src="./assets/logo-blue-160x160-1.png" alt="logo">
-					<button class="header-btn">CONTACT US</button>
+					<button class="header-btn" id="myBtn">CONTACT US</button>
 				</div>
 
 				<div class="header-text">
@@ -61,6 +76,21 @@
 
 		<script type="text/javascript">
 			// Event listener JS goes here
+
+			//Get button, content, and close
+			let btn = document.getElementById("myBtn");
+			let content = document.getElementById("contact-info");
+			let span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on the button show the content
+			btn.onclick = function () {
+				content.style.display = "block";
+			}
+
+			// When the user clicks on the span (x), close content
+			span.onclick = function () {
+				content.style.display = "none";
+			}
 		</script>
 	</body>
 </html>
