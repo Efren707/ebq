@@ -2,15 +2,14 @@
     width: 100%;
     height: 90vh;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .complete-department-content {
-    width: 90%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 95%;
+    height: 100%;
+    display: flex;    
 }
 
 .department-img {
@@ -19,16 +18,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
 }
 
 .department-img img {
     width: 65%;
-    height: 85%;
+    height: 70%;
 }
 
 .department-text {
-    width: 40%;
+    width: 35%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .department-text h1 {
@@ -51,6 +54,7 @@
 
     .complete-department {
         height: 100vh;
+        margin-top: 10%;
     }
     
     .complete-department-content {
@@ -69,6 +73,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 0px;
+        margin-top: 10%;
     }
 
     .department-img img {
@@ -80,6 +85,7 @@
     .department-text {
         width: 90%;
         text-align: center;
+        margin-left: 0;
     }
 
     .department-text h1 {
