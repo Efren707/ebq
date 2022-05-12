@@ -1,19 +1,29 @@
 /******* LANDING PAGE STYLES *******/
 
-* {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,
+var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-weight: 200;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
 }
 
 body {
-    width: 100%;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .content {
     width: 100%;
-    
+    overflow: scroll;
 }
 
 .header {
@@ -23,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -53,15 +64,44 @@ body {
 
 .header-text {
     width: 80%;
-    border: 1px solid black;
-    
+    margin-bottom: 100px;
 }
 
 .header-text-content {
-    width: 45%;
-    
+    width: 40%;
+    margin-left: 10px;
 }
 
-.header-text-content span {
+.header-text-content h1 {
     font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.header-text-content p {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .content {
+        height: 100vh;
+    }
+
+    .header {
+        height: 90vh;
+    }
+
+    .header-text {
+        width: 90%;
+        padding-bottom: 100px;
+    }
+
+    .header-text-content {
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0px;
+    }
 }
